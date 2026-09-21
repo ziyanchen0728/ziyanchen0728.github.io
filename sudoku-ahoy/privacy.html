@@ -6,76 +6,195 @@
   <title>Sudoku Ahoy Privacy Policy</title>
   <style>
     :root{--bg:#f7fbfb;--card:#fff;--ink:#17313b;--muted:#627983;--sea:#2d8fa3;--line:#dcebec}
-    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
-    .wrap{max-width:860px;margin:auto;padding:28px 22px 70px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:42px}.top a{color:var(--ink);text-decoration:none}.brand{font-weight:800}
-    h1{font-size:42px;margin:0 0 8px}.date{color:var(--muted);margin-bottom:28px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;margin:14px 0}
-    h2{font-size:20px;margin:0 0 10px} p,li{color:var(--muted);line-height:1.72} ul{padding-left:20px} a{color:var(--sea)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+    .wrap{max-width:900px;margin:auto;padding:28px 22px 70px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:34px;flex-wrap:wrap}
+    .top a{color:var(--ink);text-decoration:none}
+    .brand{font-weight:800}
+    .lang-switch{display:flex;gap:8px;flex-wrap:wrap}
+    .lang-switch button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:8px 12px;cursor:pointer;font:inherit}
+    .lang-switch button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+    h1{font-size:42px;margin:0 0 8px}
+    .date{color:var(--muted);margin-bottom:28px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;margin:14px 0}
+    h2{font-size:20px;margin:0 0 10px}
+    p,li{color:var(--muted);line-height:1.72}
+    ul{padding-left:20px}
+    a{color:var(--sea)}
     footer{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+    [data-lang]{display:none}
+    [data-lang].active{display:block}
+    @media(max-width:640px){h1{font-size:34px}.card{padding:20px}.wrap{padding:22px 16px 56px}}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="top"><a class="brand" href="./">← Sudoku Ahoy</a><a href="support.html">Support</a></div>
-    <h1>Privacy Policy</h1>
-    <div class="date">Effective date: September 20, 2026</div>
+    <div class="top">
+      <a class="brand" href="./">← Sudoku Ahoy</a>
+      <div class="lang-switch" aria-label="Language">
+        <button type="button" data-set-lang="en">English</button>
+        <button type="button" data-set-lang="zh-Hans">简体中文</button>
+        <button type="button" data-set-lang="zh-Hant">繁體中文</button>
+      </div>
+      <a href="support.html">Support</a>
+    </div>
 
-    <section class="card">
-      <h2>1. Overview</h2>
-      <p>This Privacy Policy explains how Sudoku Ahoy handles information when you use the app. Sudoku Ahoy is a logic puzzle game. We do not operate an account system and we do not ask you to provide a name, email address, phone number, contacts, photos, or precise location in order to play.</p>
-    </section>
+    <main data-lang="en">
+      <h1>Privacy Policy</h1>
+      <div class="date">Effective date: September 21, 2026</div>
 
-    <section class="card">
-      <h2>2. Gameplay data</h2>
-      <p>Gameplay information such as puzzle progress and settings may be stored locally on your device so the app can remember your progress and preferences. We do not intentionally upload your puzzle progress to our own servers.</p>
-    </section>
+      <section class="card">
+        <h2>1. Overview</h2>
+        <p>This Privacy Policy explains how Sudoku Ahoy handles information when you use the app. Sudoku Ahoy is a logic puzzle game. We do not operate an account system and we do not ask you to provide a name, email address, phone number, contacts, photos, or precise location in order to play.</p>
+      </section>
 
-    <section class="card">
-      <h2>3. Advertising</h2>
-      <p>Sudoku Ahoy uses Google Mobile Ads to display advertisements. Google and its advertising partners may process information such as device or advertising identifiers, IP address, general device information, ad interactions, and approximate location inferred from network information, depending on your region, device settings, and consent choices.</p>
-      <p>Where required, consent choices are presented using Google’s User Messaging Platform (UMP). Advertising data is handled under Google’s own policies. You can learn more at <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-    </section>
+      <section class="card">
+        <h2>2. Gameplay data</h2>
+        <p>Gameplay information such as puzzle progress, achievements, settings, and preferences may be stored locally on your device so the app can remember your progress. We do not intentionally upload this local gameplay data to our own servers.</p>
+      </section>
 
-    <section class="card">
-      <h2>4. In-app purchases</h2>
-      <p>Sudoku Ahoy offers an optional in-app purchase to remove ads. Purchases are processed by Apple through the App Store. We do not receive or store your payment card number or other full payment credentials. Apple may provide purchase status information needed to unlock or restore the purchased feature.</p>
-    </section>
+      <section class="card">
+        <h2>3. Advertising and third-party SDK data</h2>
+        <p>Sudoku Ahoy uses Google Mobile Ads to display advertisements. Depending on your region, device settings, consent choices, and Google’s services, Google and its advertising partners may process data such as approximate location inferred from IP address, device identifiers, advertising data, product interaction data, crash logs, and performance data.</p>
+        <p>These data may be used for third-party advertising, analytics, diagnostics, fraud prevention, service operation, and performance improvement. Sudoku Ahoy does not operate its own advertising profile database.</p>
+        <p>Advertising data is handled under Google’s policies. Learn more at <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+      </section>
 
-    <section class="card">
-      <h2>5. Information we do not sell</h2>
-      <p>We do not sell your personal information. We do not operate a data brokerage business and do not rent personal information to third parties.</p>
-    </section>
+      <section class="card">
+        <h2>4. Consent and advertising choices</h2>
+        <p>Where required, consent choices are presented using Google’s User Messaging Platform (UMP). You can use the options shown in the consent flow to manage eligible advertising and privacy choices. Availability of particular choices may vary by region and applicable law.</p>
+      </section>
 
-    <section class="card">
-      <h2>6. Children</h2>
-      <p>Sudoku Ahoy is a general-audience puzzle game and is not designed to knowingly collect personal information directly from children. Advertising and consent behavior may vary by region and applicable law.</p>
-    </section>
+      <section class="card">
+        <h2>5. In-app purchases</h2>
+        <p>Sudoku Ahoy offers an optional non-consumable in-app purchase to remove ads. Purchases are processed by Apple through the App Store. We do not receive or store your payment card number or other full payment credentials. Apple may provide purchase status information needed to unlock or restore the purchased feature.</p>
+      </section>
 
-    <section class="card">
-      <h2>7. Data retention and security</h2>
-      <p>Local gameplay data remains on your device unless removed by you, the operating system, or by deleting the app. Information processed by third-party services such as Google or Apple is retained according to their respective policies. We take reasonable steps to keep the app and its integrations secure, but no method of electronic storage or transmission can be guaranteed to be completely secure.</p>
-    </section>
+      <section class="card">
+        <h2>6. Tracking</h2>
+        <p>Sudoku Ahoy does not request App Tracking Transparency permission and does not access IDFA for cross-app tracking. We do not use data collected by Sudoku Ahoy to track you across apps or websites owned by other companies. Google and its partners process advertising data according to your region, device settings, consent choices, and their own policies.</p>
+      </section>
 
-    <section class="card">
-      <h2>8. Your choices</h2>
-      <ul>
-        <li>You can remove the app to delete locally stored app data.</li>
-        <li>You can manage Apple privacy and advertising settings from your device settings.</li>
-        <li>Where a consent flow is required, you can make the choices presented in that flow.</li>
-        <li>You may purchase Remove Ads to stop in-app advertising in the app after the purchase is successfully recognized.</li>
-      </ul>
-    </section>
+      <section class="card">
+        <h2>7. Information we do not sell</h2>
+        <p>We do not sell your personal information. We do not operate a data brokerage business and do not rent personal information to third parties.</p>
+      </section>
 
-    <section class="card">
-      <h2>9. Changes to this policy</h2>
-      <p>We may update this Privacy Policy when the app, its third-party services, or applicable requirements change. The effective date at the top of this page will be updated when changes are published.</p>
-    </section>
+      <section class="card">
+        <h2>8. Children</h2>
+        <p>Sudoku Ahoy is a general-audience puzzle game and is not designed to knowingly collect personal information directly from children. Advertising and consent behavior may vary by region and applicable law.</p>
+      </section>
 
-    <section class="card">
-      <h2>10. Contact</h2>
-      <p>If you have questions about this Privacy Policy or Sudoku Ahoy, contact us at <a href="mailto:quietbyte188@gmail.com">quietbyte188@gmail.com</a>.</p>
-    </section>
+      <section class="card">
+        <h2>9. Data retention and security</h2>
+        <p>Local gameplay data remains on your device unless removed by you, the operating system, or by deleting the app. Information processed by third-party services such as Google or Apple is retained according to their respective policies. We take reasonable steps to keep the app and its integrations secure, but no method of electronic storage or transmission can be guaranteed to be completely secure.</p>
+      </section>
+
+      <section class="card">
+        <h2>10. Your choices</h2>
+        <ul>
+          <li>You can remove the app to delete locally stored gameplay data.</li>
+          <li>You can manage Apple privacy and advertising settings from your device settings.</li>
+          <li>Where a consent flow is required, you can make the choices presented in that flow.</li>
+          <li>You may purchase Remove Ads to stop in-app advertising after the purchase is successfully recognized.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>11. Changes to this policy</h2>
+        <p>We may update this Privacy Policy when the app, its third-party services, or applicable requirements change. The effective date at the top of this page will be updated when changes are published.</p>
+      </section>
+
+      <section class="card">
+        <h2>12. Contact</h2>
+        <p>If you have questions about this Privacy Policy or Sudoku Ahoy, contact us at <a href="mailto:quietbyte188@gmail.com">quietbyte188@gmail.com</a>.</p>
+      </section>
+    </main>
+
+    <main data-lang="zh-Hans">
+      <h1>隐私政策</h1>
+      <div class="date">生效日期：2026 年 9 月 21 日</div>
+
+      <section class="card"><h2>1. 概述</h2><p>本隐私政策说明您使用 Sudoku Ahoy（方屿数独）时，我们如何处理相关信息。Sudoku Ahoy 是一款逻辑益智游戏。我们不提供账号系统，也不会要求您为了游玩而提供姓名、电子邮件地址、电话号码、联系人、照片或精确位置。</p></section>
+
+      <section class="card"><h2>2. 游戏数据</h2><p>谜题进度、成就、设置和偏好等游戏信息可能存储在您的设备本地，以便应用记住您的进度和选择。我们不会主动将这些本地游戏数据上传到我们自己的服务器。</p></section>
+
+      <section class="card"><h2>3. 广告和第三方 SDK 数据</h2><p>Sudoku Ahoy 使用 Google Mobile Ads 展示广告。根据您的地区、设备设置、同意选择以及 Google 的服务配置，Google 及其广告合作伙伴可能处理通过 IP 地址推断的粗略位置、设备标识符、广告数据、产品交互数据、崩溃日志和性能数据。</p><p>这些数据可能用于第三方广告、分析、诊断、防欺诈、服务运行和性能改进。Sudoku Ahoy 不运营自己的广告用户画像数据库。</p><p>广告相关数据按照 Google 的政策处理。详情请参阅 <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 隐私政策</a>。</p></section>
+
+      <section class="card"><h2>4. 同意与广告选择</h2><p>在适用地区，我们会通过 Google User Messaging Platform（UMP）展示隐私和广告同意选项。您可以通过该同意流程提供的选项管理适用的广告和隐私选择。具体选项可能因地区和适用法律而不同。</p></section>
+
+      <section class="card"><h2>5. 应用内购买</h2><p>Sudoku Ahoy 提供可选的非消耗型应用内购买，用于永久移除广告。购买交易由 Apple 通过 App Store 处理。我们不会接收或存储您的银行卡号码或其他完整支付凭证。Apple 可能会提供用于解锁或恢复已购功能所需的购买状态信息。</p></section>
+
+      <section class="card"><h2>6. 追踪</h2><p>Sudoku Ahoy 不请求 App Tracking Transparency（ATT）权限，也不会访问 IDFA 进行跨 App 追踪。我们不会使用 Sudoku Ahoy 收集的数据在其他公司的 App 或网站之间追踪您。Google 及其合作伙伴会根据您的地区、设备设置、同意选择及其自身政策处理广告相关数据。</p></section>
+
+      <section class="card"><h2>7. 我们不出售您的信息</h2><p>我们不会出售您的个人信息，也不从事数据经纪业务，不会将个人信息出租给第三方。</p></section>
+
+      <section class="card"><h2>8. 儿童</h2><p>Sudoku Ahoy 是一款面向大众的益智游戏，并非旨在有意直接收集儿童个人信息。广告和用户同意流程可能因地区和适用法律而有所不同。</p></section>
+
+      <section class="card"><h2>9. 数据保留与安全</h2><p>本地游戏数据会保留在您的设备上，除非由您、操作系统或删除应用将其移除。由 Google、Apple 等第三方服务处理的信息，会根据各自政策进行保留。我们会采取合理措施维护应用及其集成的安全，但任何电子存储或传输方式都无法保证绝对安全。</p></section>
+
+      <section class="card"><h2>10. 您的选择</h2><ul><li>您可以删除应用以移除本地保存的游戏数据。</li><li>您可以在设备设置中管理 Apple 的隐私和广告设置。</li><li>如果需要显示同意流程，您可以按照流程中的选项进行选择。</li><li>购买“永久免广告”后，在购买状态被成功识别后，应用内广告将停止显示。</li></ul></section>
+
+      <section class="card"><h2>11. 本政策的变更</h2><p>如果应用、第三方服务或适用要求发生变化，我们可能更新本隐私政策。发布变更时，会同步更新本页面顶部的生效日期。</p></section>
+
+      <section class="card"><h2>12. 联系方式</h2><p>如果您对本隐私政策或 Sudoku Ahoy 有任何疑问，请发送邮件至 <a href="mailto:quietbyte188@gmail.com">quietbyte188@gmail.com</a>。</p></section>
+    </main>
+
+    <main data-lang="zh-Hant">
+      <h1>隱私政策</h1>
+      <div class="date">生效日期：2026 年 9 月 21 日</div>
+
+      <section class="card"><h2>1. 概述</h2><p>本隱私政策說明您使用 Sudoku Ahoy（方嶼數獨）時，我們如何處理相關資訊。Sudoku Ahoy 是一款邏輯益智遊戲。我們不提供帳號系統，也不會要求您為了遊玩而提供姓名、電子郵件地址、電話號碼、聯絡人、照片或精確位置。</p></section>
+
+      <section class="card"><h2>2. 遊戲資料</h2><p>謎題進度、成就、設定和偏好等遊戲資訊可能儲存在您的裝置本機，以便應用程式記住您的進度和選擇。我們不會主動將這些本機遊戲資料上傳到我們自己的伺服器。</p></section>
+
+      <section class="card"><h2>3. 廣告和第三方 SDK 資料</h2><p>Sudoku Ahoy 使用 Google Mobile Ads 顯示廣告。根據您的地區、裝置設定、同意選擇以及 Google 的服務設定，Google 及其廣告合作夥伴可能處理透過 IP 位址推斷的粗略位置、裝置識別碼、廣告資料、產品互動資料、當機記錄和效能資料。</p><p>這些資料可能用於第三方廣告、分析、診斷、防詐欺、服務運作和效能改善。Sudoku Ahoy 不營運自己的廣告使用者畫像資料庫。</p><p>廣告相關資料依照 Google 的政策處理。詳情請參閱 <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 隱私政策</a>。</p></section>
+
+      <section class="card"><h2>4. 同意與廣告選擇</h2><p>在適用地區，我們會透過 Google User Messaging Platform（UMP）顯示隱私和廣告同意選項。您可以透過該同意流程提供的選項管理適用的廣告和隱私選擇。具體選項可能因地區和適用法律而不同。</p></section>
+
+      <section class="card"><h2>5. App 內購買</h2><p>Sudoku Ahoy 提供可選的非消耗型 App 內購買，用於永久移除廣告。購買交易由 Apple 透過 App Store 處理。我們不會接收或儲存您的信用卡號碼或其他完整付款憑證。Apple 可能會提供用於解鎖或恢復已購功能所需的購買狀態資訊。</p></section>
+
+      <section class="card"><h2>6. 追蹤</h2><p>Sudoku Ahoy 不請求 App Tracking Transparency（ATT）權限，也不會存取 IDFA 進行跨 App 追蹤。我們不會使用 Sudoku Ahoy 收集的資料在其他公司的 App 或網站之間追蹤您。Google 及其合作夥伴會根據您的地區、裝置設定、同意選擇及其自身政策處理廣告相關資料。</p></section>
+
+      <section class="card"><h2>7. 我們不出售您的資訊</h2><p>我們不會出售您的個人資訊，也不從事資料經紀業務，不會將個人資訊出租給第三方。</p></section>
+
+      <section class="card"><h2>8. 兒童</h2><p>Sudoku Ahoy 是一款面向大眾的益智遊戲，並非旨在有意直接收集兒童個人資訊。廣告和使用者同意流程可能因地區和適用法律而有所不同。</p></section>
+
+      <section class="card"><h2>9. 資料保留與安全</h2><p>本機遊戲資料會保留在您的裝置上，除非由您、作業系統或刪除應用程式將其移除。由 Google、Apple 等第三方服務處理的資訊，會根據各自政策進行保留。我們會採取合理措施維護應用程式及其整合的安全，但任何電子儲存或傳輸方式都無法保證絕對安全。</p></section>
+
+      <section class="card"><h2>10. 您的選擇</h2><ul><li>您可以刪除應用程式以移除本機儲存的遊戲資料。</li><li>您可以在裝置設定中管理 Apple 的隱私和廣告設定。</li><li>如果需要顯示同意流程，您可以依照流程中的選項進行選擇。</li><li>購買「永久免廣告」後，在購買狀態被成功識別後，App 內廣告將停止顯示。</li></ul></section>
+
+      <section class="card"><h2>11. 本政策的變更</h2><p>如果應用程式、第三方服務或適用要求發生變化，我們可能更新本隱私政策。發布變更時，會同步更新本頁面頂部的生效日期。</p></section>
+
+      <section class="card"><h2>12. 聯絡方式</h2><p>如果您對本隱私政策或 Sudoku Ahoy 有任何疑問，請寄信至 <a href="mailto:quietbyte188@gmail.com">quietbyte188@gmail.com</a>。</p></section>
+    </main>
 
     <footer>© 2026 Sudoku Ahoy. <a href="support.html">Support</a></footer>
   </div>
+
+  <script>
+    (() => {
+      const supported = ["en","zh-Hans","zh-Hant"];
+      const normalize = value => {
+        const v = (value || "").toLowerCase();
+        if (v.startsWith("zh-hant") || v.startsWith("zh-tw") || v.startsWith("zh-hk")) return "zh-Hant";
+        if (v.startsWith("zh")) return "zh-Hans";
+        return "en";
+      };
+      let current = localStorage.getItem("sudokuAhoyPrivacyLang");
+      if (!supported.includes(current)) current = normalize(navigator.language);
+
+      const apply = lang => {
+        document.documentElement.lang = lang;
+        document.querySelectorAll("[data-lang]").forEach(el => el.classList.toggle("active", el.dataset.lang === lang));
+        document.querySelectorAll("[data-set-lang]").forEach(btn => btn.classList.toggle("active", btn.dataset.setLang === lang));
+        localStorage.setItem("sudokuAhoyPrivacyLang", lang);
+      };
+
+      document.querySelectorAll("[data-set-lang]").forEach(btn => btn.addEventListener("click", () => apply(btn.dataset.setLang)));
+      apply(current);
+    })();
+  </script>
 </body>
 </html>
